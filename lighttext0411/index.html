@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Text</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div>
+    <h2 contenteditable="true">GOKUL KAMARAJ</h2>
+
+    <div class="container">
+        <span class="text first-text">I'm a</span>
+        <span class="text sec-text">Freelancer</span>
+    </div>
+</div>
+    <script>
+
+        const text = document.querySelector(".sec-text");
+
+        const textload = () => {
+            setTimeout(() => {
+                text.textContent="Freelancer";
+            },0);
+
+            setTimeout(() => {
+                text.textContent="Blogger";
+            },4000);
+
+            setTimeout(() => {
+                text.textContent="Youtuber";
+            },8000);
+
+            
+
+        }
+        textload();
+        setInterval(textload,12000);
+
+
+
+    </script>
+    
+</body>
+</html>
